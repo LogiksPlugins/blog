@@ -1,0 +1,65 @@
+{
+	"schema":"1.0",
+	"title":"Manage Blog Categories",
+	"category":"Blog",
+	"privilege":"*",
+	"blocked":false,
+	"rowlink":false,
+	"rowsPerPage":20,
+	"showExtraColumn":false,
+	"custombar":false,
+	"source":{
+		"type":"sql",
+		"table":"blog_category",
+		"sort":"id asc",
+		"limit":10
+	},
+	"datagrid":{
+		"id":{
+			"label":"ID",
+			"hidden":false,
+			"searchable":false,
+			"sortable":true,
+			"groupable":false,
+			"classes":"",
+			"style":"width:50px;",
+			"formatter":"text"
+		},
+		"title":{
+			"label":"Title",
+			"searchable":true
+		},
+		"catgroup":{
+			"label":"Group",
+			"searchable":true
+		},
+		"slug":{
+			"label":"Slug",
+			"hidden":true,
+			"searchable":true
+		},
+		"created_by":{
+			"label":"Created By",
+			"hidden":true,
+			"searchable":true
+		},
+		"created_on":{
+			"label":"Created On",
+			"formatter":"date",
+			"hidden":true,
+			"searchable":true,
+			"filter":{
+				"type":"date"
+			}
+		},
+		"edited_by":{
+			"label":"Updated By",
+			"hidden":true,
+			"searchable":true
+		},
+		"edited_on":{
+			"label":"Updated On",
+			"formatter":"date"
+		}
+	}
+}

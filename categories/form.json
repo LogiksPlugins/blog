@@ -1,0 +1,30 @@
+{
+	"postsubmit": {
+
+	},
+	"source": {
+		"type": "sql",
+		"table": "blog_category",
+		"where": ["id"]
+	},
+	"fields": {
+		"title": {
+			"label": "Catagory Title",
+			"required": true
+		},
+		"slug": {
+			"label": "Slug",
+			"type": "slug",
+			"src": "title",
+			"required": true
+		},
+		"catgroup": {
+			"label": "Group"
+		},
+		"description": {
+			"label": "Description\/Notes",
+			"type": "textarea",
+			"width": "12"
+		}
+	}
+}
